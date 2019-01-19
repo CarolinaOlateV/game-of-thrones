@@ -1,6 +1,5 @@
 const containerRoot = document.getElementById('root');
-const showData = (window.DATA.characters);
-const showData = (window.EPISODES.episodes);
+const showData = (DATA.characters);
 
 const printData = (showData) => {
     let result = '';
