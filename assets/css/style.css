@@ -29,16 +29,21 @@ body {
     box-shadow: 0 10px 20px black;
     text-align: center;
     align-content: flex-start;
+    border: 2px solid #656162;
+    border-radius: 12px;
   }
   
   .card .box .img {
     width: 100px;
     height: 120px;
     margin: 0 auto;
+    border-radius: 50%;
+    
   }
   .card .box .img img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
   }
   .card .box h2 {
     font-size: 20px;
@@ -47,7 +52,7 @@ body {
   }
   .card .box h2 span {
     font-size: 14px;
-    background: #e91e63;
+    background: #008BAA;
     color: #fff;
     display: inline-block;
     padding: 0.25em 0.6em;
@@ -59,5 +64,17 @@ body {
   .card .box span {
     display: inline-flex;
   }
+
+  select {
+  background-color: #008BAA;
+  color: white;
+  box-shadow: 0 2px 5px black;
+}
+
+select:hover {
+  background-color: #E0E9EE;
+  color: black;
+}
+
 
   

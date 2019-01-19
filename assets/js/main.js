@@ -5,7 +5,7 @@ const printData = (showData) => {
     let result = '';
     //console.log(showData)
     showData.forEach(element => {
-
+//imprimiendo data
         if (element.characterName !== '' && element.houseName !== '') {
             result = containerRoot.innerHTML += `
             <div>
