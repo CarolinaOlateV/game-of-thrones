@@ -6,15 +6,26 @@ const printData2 = (showData2) => {
     //console.log(showData)
     showData2.forEach(element => {
 //imprimiendo data
-if(element.seasonNum !== '' && element.episodeTitle !== '') {
+if(element.episodeTitle !== '' && element.episodeDescription === '') {
     result2 = containerRoot2.innerHTML += `
     <div class='card'>
     <div class='box'>
     </div>
-    <h2>${element.seasonNum}<br>${element.episodeTitle}</h2>
-    <p>Episode Description: ${element.episodeDescription}</p>
+    <h2>${element.seasonNum}<br>No Aplica</h2>
+    <p>Episode Title: ${element.episodeTitle}</p>
     </div>
     </div>`
+} else {
+    result2 = containerRoot2.innerHTML += `
+    <div>
+    <div class='card'>
+    <div class='box'>
+    </div>
+    <h2>${element.seasonNum}<br>${element.episodeDescription}</h2>
+    <p>Episode Title: ${element.episodeTitle}</p>
+    </div>
+    </div>`
+
         }
     });
     return result2;    
