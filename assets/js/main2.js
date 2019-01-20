@@ -12,8 +12,8 @@ if(element.episodeTitle !== '' && element.episodeDescription === '') {
     <div class='card2'>
     <div class='box2'>
     </div>
-    <h2>${element.seasonNum}<br>No Aplica</h2>
-    <p>Episode Title: ${element.episodeTitle}</p>
+    <h2>${element.seasonNum}<br><br>${element.episodeTitle}</h2>
+    <p>Descripción episodio: No Aplica </p>
     </div>
     </div>`
 } else {
@@ -22,11 +22,10 @@ if(element.episodeTitle !== '' && element.episodeDescription === '') {
     <div class='card2'>
     <div class='box2'>
     </div>
-    <h2>${element.seasonNum}<br>${element.episodeDescription}</h2>
-    <p>Episode Title: ${element.episodeTitle}</p>
+    <h2>${element.seasonNum}<br><br>${element.episodeTitle}</h2><br>
+    <p>Descripción episodio: ${element.episodeDescription}</p>
     </div>
     </div>`
-
         }
     });
     return result2;    
@@ -45,8 +44,8 @@ selectseason.addEventListener('change', () => {
             <div class='card2'>
             <div class='box2'>
             </div>
-            <h2>${element.seasonNum}<br>${element.episodeDescription}</h2>
-            <p>Episode Title: ${element.episodeTitle}</p>
+            <h2>${element.seasonNum}<br><br>${element.episodeTitle}</h2><br>
+            <p>Descripción episodio: ${element.episodeDescription} </p>
             </div>
             </div>`
   })
