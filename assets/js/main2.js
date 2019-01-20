@@ -1,6 +1,6 @@
 const containerRoot2 = document.getElementById('root2');
 const showData2 = (EPISODES.episodes);
-const selectSeasonNum = document.getElementById('season')
+const selectSeason = document.getElementById('season')
 
 const printData2 = (showData2) => {
     let result2 = '';
@@ -33,23 +33,13 @@ if(element.episodeTitle !== '' && element.episodeDescription === '') {
 }
 
 //filtrando
-selectSeasonNum.addEventListener('change', () => {
-    let condition = selectSeasonNum.value
-    let filtered = filterSeasonNum(showData2, condition);
+selectSeason.addEventListener('change', () => {
+    let condition = selectSeason.value
+    let filtered = filterSeason(showData2, condition);
     //limpio div
     containerRoot2.innerHTML = '';
 
     filtered.forEach(element => {
-        if(element.episodeTitle !== '' && element.episodeDescription === '') {
-            result2 = containerRoot2.innerHTML += `
-            <div class='card2'>
-            <div class='box2'>
-            </div>
-            <h2>${element.seasonNum}<br>No Aplica</h2>
-            <p>Episode Title: ${element.episodeTitle}</p>
-            </div>
-            </div>`
-        } else {
             result2 = containerRoot2.innerHTML += `
             <div>
             <div class='card2'>
@@ -59,8 +49,7 @@ selectSeasonNum.addEventListener('change', () => {
             <p>Episode Title: ${element.episodeTitle}</p>
             </div>
             </div>`
-    }
-});
+  })
 })
 
 window.onload = printData2(showData2);
