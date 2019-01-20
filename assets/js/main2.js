@@ -1,6 +1,6 @@
 const containerRoot2 = document.getElementById('root2');
 const showData2 = (EPISODES.episodes);
-const selectSeason = document.getElementById('season')
+const selectSeason = document.getElementById('selectseason')
 
 const printData2 = (showData2) => {
     let result2 = '';
@@ -33,8 +33,8 @@ if(element.episodeTitle !== '' && element.episodeDescription === '') {
 }
 
 //filtrando
-selectSeason.addEventListener('change', () => {
-    let condition = selectSeason.value
+selectseason.addEventListener('change', () => {
+    let condition = selectseason.value
     let filtered = filterSeason(showData2, condition);
     //limpio div
     containerRoot2.innerHTML = '';
